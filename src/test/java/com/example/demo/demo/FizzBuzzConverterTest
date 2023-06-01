@@ -1,6 +1,12 @@
+package com.example.demo.demo;
+import static
+org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
 @Test
 public void fizzBuzzConverter1() {
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
         Assert.assertEquals("1", fizzBuzz.convert(1));
     }
 }
+
