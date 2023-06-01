@@ -9,7 +9,7 @@ public class TicTacToeTest {
     @Test
     public void TicTacToeTest1() {
         TicTacToe ticTacToe = new TicTacToe();
-        assertTrue(ticTacToe(1,1));
+        assertEquals("1,1", ticTacToe.play(1,1));
     } 
     
 }
