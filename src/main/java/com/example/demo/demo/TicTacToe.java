@@ -5,21 +5,23 @@ public class TicTacToe {
     int lastPlayer = 3;
     boolean win = false;
     int playerWin = 3;
+    static int minField = 1;
+    static int maxFiled = 9;
+    static String notAllowed = "not allowed";
+
 
 
     public String play(int player, int field) {
         //Checks
         if(player != 1 && player != 2) {
-            return "not allowed"; 
-        } else if (field < 1 || field > 9) {
-            return "not allowed"; 
-        }else if (field < 1 || field > 9) {
-            return "not allowed"; 
+            return notAllowed; 
+        } else if (field < minField || field > maxFiled) {
+            return notAllowed; 
         } else if (player == lastPlayer) {
-            return "not allowed"; 
+            return notAllowed; 
         }
         else if (map[field] != null)  {
-            return "not allowed"; 
+            return notAllowed; 
         } else if(win) {
             if(playerWin==1){
                 return "2,lose";
